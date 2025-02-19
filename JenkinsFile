@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Check') {
-            steps {
-                git url: 'https://github.com/Lavanya0619/simple-bike-shopping-site', branch: 'main'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'npm install' 
